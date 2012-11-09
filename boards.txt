@@ -1,94 +1,79 @@
-############################################################
-
-atmega644p.name=Sanguino W/ ATmega644P
-
-atmega644p.upload.protocol=stk500
-atmega644p.upload.maximum_size=63488
-atmega644p.upload.speed=57600
-
-atmega644p.bootloader.low_fuses=0xFF
-atmega644p.bootloader.high_fuses=0x9A
-atmega644p.bootloader.extended_fuses=0xFF
-
-atmega644p.bootloader.path=atmega
-atmega644p.bootloader.file=ATmegaBOOT_168_atmega644p.hex
-#atmega644p.bootloader.path=atmega644
-#atmega644p.bootloader.file=ATmegaBOOT_644P.hex
-
-atmega644p.bootloader.unlock_bits=0x3F
-atmega644p.bootloader.lock_bits=0x0F
-
-atmega644p.build.mcu=atmega644p
-atmega644p.build.f_cpu=16000000L
-atmega644p.build.core=arduino
-atmega644p.build.variant=standard
-
-############################################################
-
-atmega644.name=Sanguino W/ ATmega644
-
-atmega644.upload.maximum_size=63488
-
-atmega644.upload.protocol=stk500
-atmega644.upload.speed=57600
-atmega644.bootloader.path=atmega
-atmega644.bootloader.file=ATmegaBOOT_168_atmega644.hex
-
-#atmega644.upload.protocol=arduino
-#atmega644.upload.speed=38400
-#atmega644.bootloader.path=atmega644
-#atmega644.bootloader.file=ATmegaBOOT_644.hex
-
-atmega644.bootloader.low_fuses=0xFF
-atmega644.bootloader.high_fuses=0x9A
-atmega644.bootloader.extended_fuses=0xFF
-atmega644.bootloader.unlock_bits=0x3F
-atmega644.bootloader.lock_bits=0x0F
-
-atmega644.build.mcu=atmega644
-atmega644.build.f_cpu=16000000L
-atmega644.build.core=arduino
-atmega644.build.variant=standard
+menu.cpu=Processor
 
 ##############################################################
 
-atmega12848m.name=Sanguino W/ ATmega1284p 8mhz
+sanguino.name=Sanguino
 
-atmega12848m.upload.protocol=stk500
-atmega12848m.upload.maximum_size=131072
-atmega12848m.upload.speed=19200
+sanguino.upload.tool=avrdude
+sanguino.upload.protocol=arduino
 
-atmega12848m.bootloader.low_fuses=0xFD
-atmega12848m.bootloader.high_fuses=0x9A
-atmega12848m.bootloader.extended_fuses=0xFF
-atmega12848m.bootloader.path=atmega
-atmega12848m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex
-atmega12848m.bootloader.unlock_bits=0x3F
-atmega12848m.bootloader.lock_bits=0x0F
+sanguino.bootloader.tool=avrdude
+sanguino.bootloader.unlock_bits=0x3F
+sanguino.bootloader.lock_bits=0x0F
 
-atmega12848m.build.mcu=atmega1284p
-atmega12848m.build.f_cpu=8000000L
-atmega12848m.build.core=arduino
-atmega12848m.build.variant=standard
+sanguino.build.core=arduino
+sanguino.build.variant=standard
 
-##############################################################
+## Sanguino W/ ATmega644p
+menu.cpu.sanguino.atmega644p=ATmega644p (16 MHz)
 
-atmega1284.name=Sanguino W/ ATmega1284p 16mhz
+menu.cpu.sanguino.atmega644p.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644p.upload.speed=57600
+#menu.cpu.sanguino.atmega644p.upload.speed=38400
 
-atmega1284.upload.protocol=stk500
-atmega1284.upload.maximum_size=131072
-atmega1284.upload.speed=57600
+menu.cpu.sanguino.atmega644p.bootloader.low_fuses=0xFF
+menu.cpu.sanguino.atmega644p.bootloader.high_fuses=0x9A
+menu.cpu.sanguino.atmega644p.bootloader.extended_fuses=0xFF
 
-atmega1284.bootloader.low_fuses=0xFF
-atmega1284.bootloader.high_fuses=0x9A
-atmega1284.bootloader.extended_fuses=0xFF
-atmega1284.bootloader.path=atmega
-atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex
-atmega1284.bootloader.unlock_bits=0x3F
-atmega1284.bootloader.lock_bits=0x0F
+menu.cpu.sanguino.atmega644p.bootloader.file=atmega/ATmegaBOOT_168_atmega644p.hex
+#menu.cpu.sanguino.atmega644p.bootloader.file=atmega644/ATmegaBOOT_644P.hex
 
-atmega1284.build.mcu=atmega1284p
-atmega1284.build.f_cpu=16000000L
-atmega1284.build.core=arduino
-atmega1284.build.variant=standard
-#
+menu.cpu.sanguino.atmega644p.build.mcu=atmega644p
+menu.cpu.sanguino.atmega644p.build.f_cpu=16000000L
+
+## Sanguino W/ ATmega644
+menu.cpu.sanguino.atmega644=ATmega644 (16 MHz)
+
+menu.cpu.sanguino.atmega644.upload.maximum_size=63488
+menu.cpu.sanguino.atmega644.upload.speed=57600
+#menu.cpu.sanguino.atmega644.upload.speed=38400
+
+menu.cpu.sanguino.atmega644.bootloader.low_fuses=0xFF
+menu.cpu.sanguino.atmega644.bootloader.high_fuses=0x9A
+menu.cpu.sanguino.atmega644.bootloader.extended_fuses=0xFF
+
+menu.cpu.sanguino.atmega644.bootloader.file=atmega/ATmegaBOOT_168_atmega644.hex
+#menu.cpu.sanguino.atmega644.bootloader.file=atmega644/ATmegaBOOT_644.hex
+
+menu.cpu.sanguino.atmega644.build.mcu=atmega644
+menu.cpu.sanguino.atmega644.build.f_cpu=16000000L
+
+## Sanguino W/ ATmega1284p 8mhz
+menu.cpu.sanguino.atmega12848m=ATmega1284p (8 MHz)
+
+menu.cpu.sanguino.atmega12848m.upload.maximum_size=131072
+menu.cpu.sanguino.atmega12848m.upload.speed=19200
+
+menu.cpu.sanguino.atmega12848m.bootloader.low_fuses=0xFD
+menu.cpu.sanguino.atmega12848m.bootloader.high_fuses=0x9A
+menu.cpu.sanguino.atmega12848m.bootloader.extended_fuses=0xFF
+
+menu.cpu.sanguino.atmega12848m.bootloader.file=atmega/ATmegaBOOT_168_atmega1284p_8m.hex
+
+menu.cpu.sanguino.atmega12848m.build.mcu=atmega1284p
+menu.cpu.sanguino.atmega12848m.build.f_cpu=8000000L
+
+## Sanguino W/ ATmega1284p 16mhz
+menu.cpu.sanguino.atmega1284=ATmega1284p (16 MHz)
+
+menu.cpu.sanguino.atmega1284.upload.maximum_size=131072
+menu.cpu.sanguino.atmega1284.upload.speed=57600
+
+menu.cpu.sanguino.atmega1284.bootloader.low_fuses=0xFF
+menu.cpu.sanguino.atmega1284.bootloader.high_fuses=0x9A
+menu.cpu.sanguino.atmega1284.bootloader.extended_fuses=0xFF
+
+menu.cpu.sanguino.atmega1284.bootloader.file=atmega/ATmegaBOOT_168_atmega1284p.hex
+
+menu.cpu.sanguino.atmega1284.build.mcu=atmega1284p
+menu.cpu.sanguino.atmega1284.build.f_cpu=16000000L
