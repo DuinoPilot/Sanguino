@@ -3,7 +3,7 @@
 The code is released under the GNU General Public License.
 _________
 
-This a Sanguino third-party hardware add-on for the Arduino IDE.
+This is a Sanguino third-party hardware add-on for the Arduino IDE.
 
 To use it, simply create a folder named hardware inside your sketchbook directory 
 and then create another folder inside that folder called avr.
