@@ -9,8 +9,8 @@ To use it, simply create a folder named hardware inside your sketchbook director
 and then create another folder inside that folder called avr.
 Now move the sanguino directory inside that folder. The structure would look like this:
 
-/hardware/avr/sanguino/etc.
+/hardware/sanguino/avr/etc.
 
 
-For more information see the following site: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware)
+For more information see the following sites: [http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware](http://www.arduino.cc/en/Guide/Environment#thirdpartyhardware) and [http://code.google.com/p/arduino/wiki/Platforms1](http://code.google.com/p/arduino/wiki/Platforms1)
 or send me an email at <a href="mailto:kristianl@tkjelectronics.dk?Subject=BalanduinoAndroidApp">kristianl@tkjelectronics.dk</a>.
