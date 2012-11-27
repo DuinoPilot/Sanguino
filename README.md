@@ -5,9 +5,7 @@ _________
 
 This is a Sanguino third-party hardware add-on for the Arduino IDE.
 
-To use it, simply create a folder named hardware inside your sketchbook directory 
-and then create another folder inside that folder called avr.
-Now move the sanguino directory inside that folder. The structure would look like this:
+To use it, simply create a folder named hardware inside your sketchbook directory and then move the sanguino directory inside that folder. The structure would look like this:
 
 /hardware/sanguino/avr/etc.
 
